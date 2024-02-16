@@ -1,0 +1,46 @@
+form {
+  margin-bottom: 2rem;
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 1rem; /* Add padding for better spacing */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #007bff; /* Blue label color */
+}
+
+input[type="text"] {
+  width: calc(100% - 22px); /* Adjusted width to accommodate padding and border */
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem; /* Rounded corners */
+  border: 2px solid #007bff; /* Blue border */
+  outline: none; /* Remove default input focus outline */
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ff69b4; /* Pink button background */
+  color: #fff; /* White button text */
+  border: none;
+  border-radius: 0.5rem; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+button[type="submit"]:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+}
+
+#output {
+  margin-top: 2rem;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem; /* Rounded corners for the canvas */
+  border: 0.25rem dashed #ff69b4; /* Pink dashed border */
+}

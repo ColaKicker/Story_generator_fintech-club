@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Story Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a readable and modern font */
+      background-color: #f0f0f0; /* Light gray background */
+      color: #333; /* Dark gray text color */
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto; /* Add space around the container */
+      padding: 20px;
+      background-color: #fff; /* White container background */
+      border-radius: 10px; /* Slightly rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+      text-align: center; /* Center align content */
+    }
+
+    h1 {
+      font-size: 28px; /* Larger header font size */
+      margin-bottom: 20px; /* Add space below the header */
+      color: #007bff; /* Blue header color */
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px; /* Add space below each label */
+    }
+
+    input[type="text"] {
+      width: calc(100% - 24px); /* Adjusted width to accommodate padding and border */
+      padding: 10px;
+      margin-bottom: 20px; /* Add more space between input fields */
+      border-radius: 5px;
+      border: 1px solid #ccc; /* Light gray border */
+      outline: none; /* Remove default input focus outline */
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff; /* Blue button background */
+      color: #fff; /* White button text */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Smooth color transition */
+    }
+
+    button[type="submit"]:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    #output {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Financial Story Generator</h1>
+    <canvas id="canvas" width="600" height="400"></canvas>
+    <form id="story-form">
+      <label for="character">Character:</label>
+      <input type="text" id="character" name="character" required><br>
+      
+      <label for="setting">Setting:</label>
+      <input type="text" id="setting" name="setting" required><br>
+      
+      <label for="plot">Plot:</label>
+      <input type="text" id="plot" name="plot" required><br>
+      
+      <label for="mood">Mood:</label>
+      <input type="text" id="mood" name="mood" required><br>
+      
+      <button type="submit">Generate Story</button>
+    </form>
+    <div id="output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
